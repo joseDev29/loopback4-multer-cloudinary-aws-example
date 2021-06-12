@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="/css/global.css" />
+  </head>
+  <body>
+    <form action="/image-upload" method="POST" enctype="multipart/form-data">
+      <h2>Images Upload</h2>
+      <label for="">File</label>
+      <input type="file" name="image_file" id="imageFile" />
+      <button type="submit">upload file</button>
+    </form>
+
+    <form action="/document-upload" method="POST" enctype="multipart/form-data">
+      <h2>Documents Upload</h2>
+      <label for="">File</label>
+      <input type="file" name="document_file" id="documentFile" />
+      <button type="submit">upload file</button>
+    </form>
+
+    <script src="/uploadFiles.js"></script>
+  </body>
+</html>
